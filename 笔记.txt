@@ -1,0 +1,11 @@
+编辑框：
+imeOptions属性，更改软键盘中的回车。如属性值为actionNext，软键盘上的回车按钮就变成了下一个
+
+
+ScrollView:
+ overScrollMode属性：滑动到底部时是否有阴影
+ clipToPadding：
+ scrollbars:设置滚动条的位置
+
+ImageView:
+  scaleType:设置图片是等比缩放还是其他

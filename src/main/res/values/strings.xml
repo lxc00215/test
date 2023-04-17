@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ChatApp</string>
+    <string name="welcome_back">Welcome Back!</string>
+    <string name="login_to_continue">login_to_continue</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="create_new_account">Create_new_account</string>
+    <string name="add_image">add_image</string>
+    <string name="confirmpassword">Confirm Password</string>
+    <string name="name">Name</string>
+    <string name="sign_up">SIGN Up</string>
+    <string name="select_users">选择用户</string>
+    <string name="entetMessage">请输入信息</string>
+</resources>

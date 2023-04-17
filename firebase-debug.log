@@ -1,0 +1,39 @@
+[debug] [2023-04-16T23:26:00.088Z] ----------------------------------------------------------------------
+[debug] [2023-04-16T23:26:00.089Z] Command:       D:\node.exe C:\Users\lxc\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-04-16T23:26:00.090Z] CLI Version:   11.27.0
+[debug] [2023-04-16T23:26:00.090Z] Platform:      win32
+[debug] [2023-04-16T23:26:00.090Z] Node Version:  v18.16.0
+[debug] [2023-04-16T23:26:00.091Z] Time:          Mon Apr 17 2023 07:26:00 GMT+0800 (中国标准时间)
+[debug] [2023-04-16T23:26:00.091Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-04-16T23:26:00.150Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-04-16T23:26:00.151Z] > authorizing via signed-in user (lxc3136@gmail.com)
+[debug] [2023-04-16T23:26:00.151Z] [iam] checking project chatapp-9d2f3 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-04-16T23:26:00.152Z] > refreshing access token with scopes: []
+[debug] [2023-04-16T23:26:00.153Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-04-16T23:26:00.154Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-04-16T23:26:21.225Z] [iam] error while checking permissions, command may fail: FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2023-04-16T23:26:21.226Z] > refreshing access token with scopes: []
+[debug] [2023-04-16T23:26:21.226Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-04-16T23:26:21.226Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-04-16T23:27:23.891Z] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2023-04-16T23:27:24.121Z] FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+    at invalidCredentialError (C:\Users\lxc\AppData\Roaming\npm\node_modules\firebase-tools\lib\auth.js:144:12)
+    at refreshTokens (C:\Users\lxc\AppData\Roaming\npm\node_modules\firebase-tools\lib\auth.js:508:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Client.getAccessToken (C:\Users\lxc\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:149:23)
+    at async Client.addAuthHeader (C:\Users\lxc\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:140:21)
+    at async Client.request (C:\Users\lxc\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:96:34)
+    at async getFirebaseProject (C:\Users\lxc\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:295:21)
+    at async getDefaultHostingSite (C:\Users\lxc\AppData\Roaming\npm\node_modules\firebase-tools\lib\getDefaultHostingSite.js:10:21)
+    at async requireHostingSite (C:\Users\lxc\AppData\Roaming\npm\node_modules\firebase-tools\lib\requireHostingSite.js:9:18)
+    at async Object.fn (C:\Users\lxc\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\deploy.js:74:9)
+    at async C:\Users\lxc\AppData\Roaming\npm\node_modules\firebase-tools\lib\command.js:214:17
+[error] 
+[error] Error: Failed to get Firebase project chatapp-9d2f3. Please make sure the project exists and your account has permission to access it.
